@@ -25,6 +25,7 @@ pipeline {
      stage('Download artifact Nexus Repository Manager') {
        steps {
          sh 'mvn help:evaluate'
+         sh 'ls -la'
        }
      }
    }
